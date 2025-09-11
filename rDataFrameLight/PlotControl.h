@@ -84,7 +84,7 @@ public:
     void drawCanvasHists(std::map<std::string, TH1D *> &plotHists, double scale, std::map<std::string, int> &isData, int doLegend, int isRatio = 0, std::vector<std::string> plotTexts = {}, float mcScaling = 1);
 
     // save
-    void saveCanvas(const std::string &fileName);
+    void saveCanvas(const std::string &fileName, int doLog);
 
     // utilize function
     void drawStackHistWithRatio(const std::map<std::string, TH1D *> &hists, const std::vector<std::string> &stackOrder, const std::map<std::string, double> &stackUp, const std::map<std::string, double> &stackDown, int reOrder, const std::map<std::string, TH1D *> &ratioHists, PlotContext setup, float mcScaling, const std::map<std::string, int> &colorScheme, const std::map<std::string, std::string> &labels, const std::vector<std::string> &aboveTexts, const std::vector<std::string> &belowTexts = {}, const std::vector<std::string>& binLabels={});
