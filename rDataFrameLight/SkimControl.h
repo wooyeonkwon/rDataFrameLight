@@ -40,6 +40,9 @@ private:
     // allow allow manually turn off
     std::map<std::string, int> _isOn;
 
+    // flag to enable preliminary directory structure and filtering
+    bool _isPreliminary{true};
+
     // branch to keep
     std::vector<std::string> _branchList;
 
