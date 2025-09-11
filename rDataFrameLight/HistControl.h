@@ -70,6 +70,8 @@ public:
     // to add histogram together
     HistControl addHistograms(const HistControl& toAdd);
 
+    std::map<std::string, TH1D*> getHistInstance();
+
     HistControl(const HistControl &other);
     HistControl &operator=(const HistControl &other);
 };

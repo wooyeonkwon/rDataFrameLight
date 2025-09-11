@@ -685,8 +685,7 @@ HistControl &HistControl::operator=(const HistControl &other)
 }
 
 
-std::map<std::string, TH1D*> HistControl::getHistInstance()
-{
+std::map<std::string, TH1D*> HistControl::getHistInstance() {
     std::cout << "You are directly accessing the histogram!" << std::endl;
-    return this->_histograms;
+    return _histograms;
 }
